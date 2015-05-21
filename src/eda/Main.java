@@ -16,9 +16,13 @@ public class Main {
 
 		while (aux != 0) 
 		{
+			System.out.println(" ");
+			System.out.println("Menuzinho do BACON");
 			System.out.println("1: lista 1 ex 1");
 			System.out.println("2: lista 1 ex 2");
 			System.out.println("3: lista 1 ex 3");
+			System.out.println("4: lista 2 ex 1");
+			System.out.println("5: lista 2 ex 2");
 			System.out.println("Digite 0 para sair");
 			aux = scan.nextInt();
 			switch (aux) 
@@ -37,6 +41,10 @@ public class Main {
 				E2.mdcrec(a, b);break;
 			case 3:
 				System.out.println("O maior numeor eh: "+E3.vetRec(vet,0,0));break;
+			case 4:
+				L2E1.BubbleSort(Sup.pedirArray());break;
+			case 5:
+				L2E2.ordenar(Sup.pedirArray());
 			case 0:
 				System.out.println("Flw Vlw e ateh mais");break;
 			default:

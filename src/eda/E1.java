@@ -1,5 +1,7 @@
 package eda;
 
+import javax.swing.JOptionPane;
+
 public class E1 
 {
 	public static void mdc1(int a ,int b)
@@ -12,7 +14,7 @@ public class E1
 			b=aux;
 			
 		}
-		System.out.println("mdc:"+a);
+		JOptionPane.showMessageDialog(null, "mdc:"+a);
 	}
 
 }

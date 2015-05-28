@@ -1,5 +1,9 @@
 package eda;
 
+import java.util.Arrays;
+
+import javax.swing.JOptionPane;
+
 public class L2E1 
 {
 	 public static void BubbleSort(int _vet[])
@@ -21,11 +25,6 @@ public class L2E1
 		         }
 		     }
 		 }
-		 System.out.println("O vetor ordenado ficou:");
-		 System.out.println("");
-		 for(int x : vet)
-		 {
-			 System.out.print(x + " - ");
-		 }
+		 JOptionPane.showMessageDialog(null, "O vetor ordenado ficou: " + Arrays.toString(vet));		 
 	 }
 }

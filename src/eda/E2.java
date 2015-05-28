@@ -1,5 +1,7 @@
 package eda;
 
+import javax.swing.JOptionPane;
+
 public class E2 
 {
 	public static void mdcrec(int a , int b)
@@ -9,7 +11,7 @@ public class E2
 			mdcrec(b,a%b);
 		}
 		else
-			System.out.println("MDC = "+b);
+			JOptionPane.showMessageDialog(null, "MDC = "+b);
 		
 	}
 	

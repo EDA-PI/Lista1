@@ -1,25 +1,38 @@
 package eda;
 
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+
+
 public class L2E2 
 {
 	public static void ordenar(int[] vetor)
 	{
-	   ordenar(vetor, 0, vetor.length - 1);
+		ArrayList<Integer> lista = new ArrayList<>();
+	    lista = ordenar(vetor, 0, vetor.length - 1);
+	    JOptionPane.showMessageDialog(null,lista.toString());
 	}
 	
-	private static void ordenar(int[] vetor, int inicio, int fim)
+	private static ArrayList<Integer> ordenar(int[] vetor, int inicio, int fim)
 	{
-		for(int x : vetor)
-		{
-			System.out.print(x + " - ");
-		}
-		System.out.println(" ");
+		
+		
+		
 	   if (inicio < fim)
 	   {
 	      int posicaoPivo = separar(vetor, inicio, fim);
 	      ordenar(vetor, inicio, posicaoPivo - 1);
 	      ordenar(vetor, posicaoPivo + 1, fim);
 	   }
+	   
+	   	ArrayList<Integer> lista = new ArrayList<>();
+		for(int x : vetor)
+		{
+			lista.add(x);
+		}
+	  return lista;
 	}
 	
 	private static int separar(int[] vetor, int inicio, int fim)

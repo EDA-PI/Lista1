@@ -16,6 +16,8 @@ public class Main {
 		JOptionPane.showMessageDialog(null, "Grupo: Ricardo Le Cocq, Eduardo Fernandes, Izabella Lima");
 		System.out.println();
 		JOptionPane.showMessageDialog(null,"Digite o exercicio a testar:");
+		
+		// TODOS OS PROBLEMAS USARAO ESTE VETOR PARA OS TESTES.
 		int[] vet = {2,5,10,6,4,1,3,7,9,8};
 
 		while (aux != 0) 
@@ -49,7 +51,7 @@ public class Main {
 			case 4:
 				L2E1.BubbleSort(Sup.pedirArray());break;
 			case 5:
-				L2E2.ordenar(Sup.pedirArray());
+				L2E2.ordenar(Sup.pedirArray());break;
 			case 0:
 				JOptionPane.showMessageDialog(null,"Flw Vlw e ateh mais");break;
 			default:
